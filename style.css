@@ -255,3 +255,23 @@ footer {
   display: block;
   border-radius: 6px;
 }
+
+@media (max-width: 600px) {
+  .entry-image-wrapper[data-size="small"]  .entry-image { width: 80px; }
+  .entry-image-wrapper[data-size="medium"] .entry-image { width: 140px; }
+  .entry-image-wrapper[data-size="large"]  .entry-image { width: 100%; max-width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .entry-images-duo {
+    flex-direction: column;       /* apila las imágenes verticalmente */
+    align-items: center;          /* las centra */
+    gap: 10px;
+  }
+
+  .entry-images-duo .entry-image-wrapper[data-size="small"]  .entry-image { width: 80px; }
+  .entry-images-duo .entry-image-wrapper[data-size="medium"] .entry-image { width: 140px; }
+  .entry-images-duo .entry-image-wrapper[data-size="large"]  .entry-image { width: 100%; }
+}
+
+
